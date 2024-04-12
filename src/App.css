@@ -1,0 +1,41 @@
+.ok {
+  border: 50px solid rgb(241, 17, 17);
+}
+.hidden {
+  display: none;
+}
+
+body {
+  margin-right: calc(100vw - 100%);
+}
+
+::-webkit-scrollbar {
+  height: 3px; /* Height of the scrollbar */
+  width: 3px; /* Width of the scrollbar */
+}
+
+@media screen and (max-width: 800px) {
+  .name {
+    max-height: 25%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+  }
+}
+@media screen and (max-width: 600px) {
+  .sidbar {
+    min-width: 30%;
+    font-size: 1px !important;
+  }
+  
+  :link {
+    font-size: 15px;
+  }
+  i{
+    /* border: n; */
+    font-size: 12px!important;
+  }
+ 
+}
+
+ 
