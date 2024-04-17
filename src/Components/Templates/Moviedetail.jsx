@@ -10,13 +10,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { asycloadmovie, removemovie } from "../store/action/movieaction";
 import Loading from "./Loading";
 import HorizontalCards from "../Templates/HorizontalCards";
-import NotFound from "./NotFound";
-useLocation;
-function Moviedetail() {
+ function Moviedetail() {
   const { info } = useSelector((state) => state.movie);
   console.log(info);
   const { id } = useParams();
-  const dispatch = useDispatch();
+   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { pathname } = useLocation();
 

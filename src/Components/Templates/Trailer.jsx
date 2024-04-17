@@ -16,11 +16,11 @@ const Trailer = () => {
                 onClick={() => navigate(-1)}
                 className="absolute hover:text-[#6556CD] ri-close-fill text-3xl text-white right-[5%] top-[5%]"
             ></Link>
-            <div className="w-[90vw] h-[90vh] ">
+            <div jclassName="w-[100vw] h-[100vh] ">
             {ytvideo ? (
                 <ReactPlayer
-                width={`90%`}
-                height={`90%`}
+                width={`80vw`}
+                height={`80vh`}
                       url={`https://www.youtube.com/watch?v=${ytvideo.key}`}
                 />
             ) : (
